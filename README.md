@@ -18,7 +18,20 @@ quantity — доступное количество, число.
 
 items — список предложений, массив объектов, по умолчанию пустой массив.
 Компонент должен создавать на основе списка предложений следующий HTML-код:
-
+<div class="item-list">
+  <div class="item">
+    <div class="item-image">
+      <a href="https://www.etsy.com/listing/292754135/woodland-fairy">
+        <img src="https://img1.etsystatic.com/156/0/12814579/il_570xN.1173240751_50hv.jpg">
+      </a>
+    </div>
+    <div class="item-details">
+      <p class="item-title">Woodland Fairy</p>
+      <p class="item-price">$3.99</p>
+      <p class="item-quantity level-medium">12 left</p>
+    </div>
+  </div>
+</div>
 
 Если название предложения привышает 50 символов, то необходимо выводить только первые 50 символов, и добавлять символ … в конце.
 
